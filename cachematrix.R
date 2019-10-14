@@ -1,5 +1,7 @@
 ## Cache matrix inversion to increase speed
 
+# Make a cache matrix
+
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
@@ -16,7 +18,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Skips the inverse if no changes are made to it, increases speed
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
